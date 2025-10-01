@@ -3,37 +3,40 @@
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
+    background: linear-gradient(135deg, #f9f9f9, #f0f0f0);
+    min-height: 100vh;
 }
 
-
-@media (prefers-reduced-motion: no-preference) {
-    a:nth-of-type(2) .logo {
-        animation: logo-spin infinite 20s linear;
-    }
-}
-
+/* Ogólna karta */
 .card {
     padding: 2em;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .read-the-docs {
-    color: #888;
+    color: #666;
 }
 
+/* Przycisk */
 .fetchButton {
-    border: #242424 solid 5px;
-    color: black;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
     width: 200px;
     height: 60px;
-    background-color: #fff;
-    border-radius: 20px;
+    background: linear-gradient(45deg, #ff8a00, #e52e71);
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 
-    transition: border-color 0.2s, width 0.2s, height 0.2s, transform 67s, border-radius 0.2s;
+    transition: all 0.3s ease;
 }
 
 .fetchButton:hover {
-    border-color: pink;
-    transform: rotate3d(3000, 8000, 1800, 720deg);
-    border-radius: 50%;
-
+    transform: translateY(-6px) scale(1.05);
+    background: linear-gradient(45deg, #e52e71, #ff8a00);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
