@@ -40,8 +40,8 @@ function App() {
             setPokemons(pokemonResult);
             setViewList(true);
         } catch (error) {
-            console.log("Coś się popsuło...");
-            setFetchOutput("Coś się popsuło. Sprawdź połączenie z internetem.");
+            console.log("Coś nie działa...");
+            setFetchOutput("Coś nie działa.");
         }
     }
 

@@ -30,7 +30,7 @@ const ListViewer = ({ pokemons }: ListViewerProps) => {
             />
 
             {
-                searchQuery.length === 0 ? <p className="grr"></p> :
+                searchQuery.length === 0 ? <p className="grr">Wpisz coś</p> :
                     pokemons
                         .filter((p) => p.name.toLowerCase().includes(searchQuery.toLowerCase()))
                         .map((pokemon, index) => (
@@ -40,7 +40,6 @@ const ListViewer = ({ pokemons }: ListViewerProps) => {
                                     setDisplayedPokemon(pokemon);
                                     displayInfo();
                                 }}
-                                style={{ cursor: "pointer" }}
                             >
                                 {pokemon.name}
                             </p>
